@@ -11,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: build
-      run: ls && cd .. && ls && cmake -H. -B_build -DBUILD_TESTS=ON
+      run: ls 
     - name: test
       run: cd .. && cmake --build _build --target test
