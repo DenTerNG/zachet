@@ -12,6 +12,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: build
-      run: flutter clean && flutter pub get && cmake -H. -B_build -DBUILD_TESTS=ON
+      run: rm -r _build && cmake -H. -B_build -DBUILD_TESTS=ON
     - name: test
       run: cmake --build _build --target test
