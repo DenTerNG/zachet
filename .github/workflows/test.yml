@@ -10,8 +10,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: ls
-      run: ls
     - name: build
       run: cmake -H. -B_build -DBUILD_TESTS=ON
     - name: test
