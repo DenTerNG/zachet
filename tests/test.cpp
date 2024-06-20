@@ -1,28 +1,6 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
-
-class A {
-public:
-    static A* getInstance();
-
-private:
-    A();
-    static A* instance;
-};
-
-A* A::instance = nullptr;
-
-A::A() {
-    std::cout << "construct A" << std::endl;
-}
-
-A* A::getInstance() {
-    std::cout << "get A" << std::endl;
-    if (!instance) {
-        instance = new A;
-    }
-    return instance;
-}
+#include "A.h"
 
 class MockA {
 public:
@@ -30,8 +8,10 @@ public:
     MOCK_METHOD0(AConstructor, void());
 };
 
+// Глобальная переменная для mock-объекта
 MockA* mockA;
 
+// Переопределение метода getInstance для использования mock-объекта
 A* A::getInstance() {
     if (!mockA) {
         return nullptr;
@@ -39,6 +19,7 @@ A* A::getInstance() {
     return mockA->getInstance();
 }
 
+// Переопределение конструктора для использования mock-объекта
 A::A() {
     if (mockA) {
         mockA->AConstructor();
