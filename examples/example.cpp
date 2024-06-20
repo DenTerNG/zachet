@@ -1,16 +1,8 @@
-// main.cpp
-#include <iostream>
-#include "a_b.hpp"
+#include "A.h"
 
 int main() {
-    A a;
-    int number;
-
-    std::cout << "Введите число для проверки делимости на 5: ";
-    std::cin >> number;
-
-    int res = a.f1(number);
-    std::cout << "Результат: " << res << std::endl;
+    A* pa1 = A::getInstance();
+    A* pa2 = A::getInstance();
 
     return 0;
 }
