@@ -1,4 +1,5 @@
 #include <gtest/gtest.h>
+#include <gtest/gmock.h>
 
 class A {
 public:
