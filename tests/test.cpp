@@ -1,28 +1,6 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
-
-class A {
-public:
-    static A* getInstance();
-
-private:
-    A();
-    static A* instance;
-};
-
-A* A::instance = nullptr;
-
-A::A() {
-    std::cout << "construct A" << std::endl;
-}
-
-A* A::getInstance() {
-    std::cout << "get A" << std::endl;
-    if (!instance) {
-        instance = new A;
-    }
-    return instance;
-}
+#include "A.h"
 
 class MockA {
 public:
