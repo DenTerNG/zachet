@@ -28,7 +28,7 @@ TEST(ATest, GetInstanceCalledOnce) {
     MockA mock;
     mockA = &mock;
 
-    EXPECT_CALL(mock, AConstructor()).Times(1);
+    EXPECT_CALL(mock, getInstance()).Times(1);
     
     A* pa1 = A::getInstance();
     A* pa2 = A::getInstance();
