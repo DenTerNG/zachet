@@ -14,4 +14,4 @@ jobs:
     - name: build
       run: rm -r _build && cmake -H. -B_build -DBUILD_TESTS=ON && cmake --build _build
     - name: test
-      run: cmake --build _build --target test
+      run: cmake --build _build --target test -- ARGS=--verbose
