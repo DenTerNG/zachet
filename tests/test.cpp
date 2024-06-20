@@ -14,7 +14,8 @@ MockA* mockA = nullptr;
 // Переопределение метода getInstance для использования mock-объекта
 A* A::getInstance() {
     if (!mockA) {
-        return nullptr;
+        static A instance;  // Создание единственного экземпляра
+        return &instance;
     }
     return mockA->getInstance();
 }
@@ -43,3 +44,4 @@ int main(int argc, char** argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
 }
+
