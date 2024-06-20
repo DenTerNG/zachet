@@ -11,24 +11,21 @@ public:
 MockA* mockA = nullptr;
 
 A* A::getInstance() {
-    if (!mockA) {
-        static A instance;  
-        return &instance;
-    }
+    static A instance;  
+    return &instance;
     return mockA->getInstance();
 }
 
 A::A() {
-    if (mockA) {
-        mockA->AConstructor();
-    }
+      std::cout << "construct " << std::endl;
+      mockA->AConstructor();
 }
 
 TEST(ATest, GetInstanceCalledOnce) {
     MockA mock;
     mockA = &mock;
 
-    EXPECT_CALL(mock, getInstance()).Times(1);
+    EXPECT_CALL(mock, AConstructor()).Times(1);
     
     A* pa1 = A::getInstance();
     A* pa2 = A::getInstance();
