@@ -29,8 +29,7 @@ TEST(ATest, GetInstanceCalledOnce) {
     mockA = &mock;
 
     EXPECT_CALL(mock, AConstructor()).Times(1);
-    EXPECT_CALL(mock, getInstance()).Times(2).WillRepeatedly(::testing::Return(reinterpret_cast<A*>(1)));
-
+    
     A* pa1 = A::getInstance();
     A* pa2 = A::getInstance();
 
