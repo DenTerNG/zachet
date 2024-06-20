@@ -8,19 +8,16 @@ public:
     MOCK_METHOD0(AConstructor, void());
 };
 
-// Глобальная переменная для mock-объекта
 MockA* mockA = nullptr;
 
-// Переопределение метода getInstance для использования mock-объекта
 A* A::getInstance() {
     if (!mockA) {
-        static A instance;  // Создание единственного экземпляра
+        static A instance;  
         return &instance;
     }
     return mockA->getInstance();
 }
 
-// Переопределение конструктора для использования mock-объекта
 A::A() {
     if (mockA) {
         mockA->AConstructor();
