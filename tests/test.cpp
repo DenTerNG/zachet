@@ -1,40 +1,22 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
-#include "A.h"
+#include "function.hpp"
 
-class MockA {
-public:
-    MOCK_METHOD0(getInstance, A*());
-    MOCK_METHOD0(AConstructor, void());
-};
-
-MockA* mockA = nullptr;
-
-A* A::getInstance() {
-    static A instance;  
-    return &instance;
-    return mockA->getInstance();
+// Test case for the function
+TEST(FunctionTest, BasicTest) {
+    EXPECT_EQ(function(1, 2), 3); // (1 + 2) / 1 = 3
+    EXPECT_EQ(function(2, 2), 2); // (2 + 2) / 2 = 2
+    EXPECT_EQ(function(3, 3), 2); // (3 + 3) / 3 = 2
+    EXPECT_EQ(function(4, 0), 1); // (4 + 0) / 4 = 1
 }
 
-A::A() {
-      std::cout << "construct " << std::endl;
-      mockA->AConstructor();
+// Test case for edge cases
+TEST(FunctionTest, EdgeCases) {
+    EXPECT_EQ(function(1, 0), 1); // (1 + 0) / 1 = 1
+    EXPECT_EQ(function(0, 0), 0); // (0 + 0) / 0 = 0 (undefined behavior, but function returns 0)
 }
 
-TEST(ATest, GetInstanceCalledOnce) {
-    MockA mock;
-    mockA = &mock;
-
-    EXPECT_CALL(mock, AConstructor()).Times(1);
-    
-    A* pa1 = A::getInstance();
-    A* pa2 = A::getInstance();
-
-    mockA = nullptr;
-}
-
-int main(int argc, char** argv) {
+int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
 }
-
