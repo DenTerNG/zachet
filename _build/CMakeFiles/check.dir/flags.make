@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/dt/DenTerNG/workspace/projects/timp21/include -isystem /home/dt/DenTerNG/workspace/projects/timp21/third-party/gtest/googletest/include -isystem /home/dt/DenTerNG/workspace/projects/timp21/third-party/gtest/googletest -isystem /home/dt/DenTerNG/workspace/projects/timp21/third-party/gtest/googlemock/include -isystem /home/dt/DenTerNG/workspace/projects/timp21/third-party/gtest/googlemock
+CXX_INCLUDES = -I/home/dt/zachet/include -isystem /home/dt/zachet/third-party/gtest/googletest/include -isystem /home/dt/zachet/third-party/gtest/googletest -isystem /home/dt/zachet/third-party/gtest/googlemock/include -isystem /home/dt/zachet/third-party/gtest/googlemock
 
 CXX_FLAGS = -std=gnu++14
 

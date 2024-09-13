@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/dt/DenTerNG/workspace/projects/timp21/sources/A.cpp" "CMakeFiles/print.dir/sources/A.cpp.o" "gcc" "CMakeFiles/print.dir/sources/A.cpp.o.d"
+  "/home/dt/zachet/sources/function.cpp" "CMakeFiles/print.dir/sources/function.cpp.o" "gcc" "CMakeFiles/print.dir/sources/function.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

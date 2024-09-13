@@ -1,29 +1,24 @@
-Start testing: Jun 20 10:50 MSK
+Start testing: Sep 13 18:18 MSK
 ----------------------------------------------------------
 1/1 Testing: check
 1/1 Test: check
-Command: "/home/dt/DenTerNG/workspace/projects/timp21/_Build/check"
-Directory: /home/dt/DenTerNG/workspace/projects/timp21/_Build
-"check" start time: Jun 20 10:50 MSK
+Command: "/home/dt/zachet/_build/check"
+Directory: /home/dt/zachet/_build
+"check" start time: Sep 13 18:18 MSK
 Output:
 ----------------------------------------------------------
-[==========] Running 1 test from 1 test suite.
+[==========] Running 2 tests from 1 test suite.
 [----------] Global test environment set-up.
-[----------] 1 test from ATest
-[ RUN      ] ATest.GetInstanceCalledOnce
-construct 
-[       OK ] ATest.GetInstanceCalledOnce (0 ms)
-[----------] 1 test from ATest (0 ms total)
-
-[----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 1 test.
+[----------] 2 tests from FunctionTest
+[ RUN      ] FunctionTest.BasicTest
+[       OK ] FunctionTest.BasicTest (0 ms)
+[ RUN      ] FunctionTest.EdgeCases
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
-Test Passed.
-"check" end time: Jun 20 10:50 MSK
+Test Failed.
+"check" end time: Sep 13 18:18 MSK
 "check" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jun 20 10:50 MSK
+End testing: Sep 13 18:18 MSK

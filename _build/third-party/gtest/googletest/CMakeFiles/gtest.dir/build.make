@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dt/DenTerNG/workspace/projects/timp21
+CMAKE_SOURCE_DIR = /home/dt/zachet
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dt/DenTerNG/workspace/projects/timp21/_Build
+CMAKE_BINARY_DIR = /home/dt/zachet/_build
 
 # Include any dependencies generated for this target.
 include third-party/gtest/googletest/CMakeFiles/gtest.dir/depend.make
@@ -70,18 +70,18 @@ include third-party/gtest/googletest/CMakeFiles/gtest.dir/progress.make
 include third-party/gtest/googletest/CMakeFiles/gtest.dir/flags.make
 
 third-party/gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: third-party/gtest/googletest/CMakeFiles/gtest.dir/flags.make
-third-party/gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: /home/dt/DenTerNG/workspace/projects/timp21/third-party/gtest/googletest/src/gtest-all.cc
+third-party/gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: /home/dt/zachet/third-party/gtest/googletest/src/gtest-all.cc
 third-party/gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: third-party/gtest/googletest/CMakeFiles/gtest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dt/DenTerNG/workspace/projects/timp21/_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object third-party/gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
-	cd /home/dt/DenTerNG/workspace/projects/timp21/_Build/third-party/gtest/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third-party/gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o -MF CMakeFiles/gtest.dir/src/gtest-all.cc.o.d -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/dt/DenTerNG/workspace/projects/timp21/third-party/gtest/googletest/src/gtest-all.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dt/zachet/_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object third-party/gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+	cd /home/dt/zachet/_build/third-party/gtest/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third-party/gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o -MF CMakeFiles/gtest.dir/src/gtest-all.cc.o.d -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/dt/zachet/third-party/gtest/googletest/src/gtest-all.cc
 
 third-party/gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gtest.dir/src/gtest-all.cc.i"
-	cd /home/dt/DenTerNG/workspace/projects/timp21/_Build/third-party/gtest/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dt/DenTerNG/workspace/projects/timp21/third-party/gtest/googletest/src/gtest-all.cc > CMakeFiles/gtest.dir/src/gtest-all.cc.i
+	cd /home/dt/zachet/_build/third-party/gtest/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dt/zachet/third-party/gtest/googletest/src/gtest-all.cc > CMakeFiles/gtest.dir/src/gtest-all.cc.i
 
 third-party/gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gtest.dir/src/gtest-all.cc.s"
-	cd /home/dt/DenTerNG/workspace/projects/timp21/_Build/third-party/gtest/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dt/DenTerNG/workspace/projects/timp21/third-party/gtest/googletest/src/gtest-all.cc -o CMakeFiles/gtest.dir/src/gtest-all.cc.s
+	cd /home/dt/zachet/_build/third-party/gtest/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dt/zachet/third-party/gtest/googletest/src/gtest-all.cc -o CMakeFiles/gtest.dir/src/gtest-all.cc.s
 
 # Object files for target gtest
 gtest_OBJECTS = \
@@ -93,19 +93,19 @@ gtest_EXTERNAL_OBJECTS =
 lib/libgtest.a: third-party/gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
 lib/libgtest.a: third-party/gtest/googletest/CMakeFiles/gtest.dir/build.make
 lib/libgtest.a: third-party/gtest/googletest/CMakeFiles/gtest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dt/DenTerNG/workspace/projects/timp21/_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../lib/libgtest.a"
-	cd /home/dt/DenTerNG/workspace/projects/timp21/_Build/third-party/gtest/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest.dir/cmake_clean_target.cmake
-	cd /home/dt/DenTerNG/workspace/projects/timp21/_Build/third-party/gtest/googletest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtest.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dt/zachet/_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../lib/libgtest.a"
+	cd /home/dt/zachet/_build/third-party/gtest/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest.dir/cmake_clean_target.cmake
+	cd /home/dt/zachet/_build/third-party/gtest/googletest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 third-party/gtest/googletest/CMakeFiles/gtest.dir/build: lib/libgtest.a
 .PHONY : third-party/gtest/googletest/CMakeFiles/gtest.dir/build
 
 third-party/gtest/googletest/CMakeFiles/gtest.dir/clean:
-	cd /home/dt/DenTerNG/workspace/projects/timp21/_Build/third-party/gtest/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest.dir/cmake_clean.cmake
+	cd /home/dt/zachet/_build/third-party/gtest/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest.dir/cmake_clean.cmake
 .PHONY : third-party/gtest/googletest/CMakeFiles/gtest.dir/clean
 
 third-party/gtest/googletest/CMakeFiles/gtest.dir/depend:
-	cd /home/dt/DenTerNG/workspace/projects/timp21/_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dt/DenTerNG/workspace/projects/timp21 /home/dt/DenTerNG/workspace/projects/timp21/third-party/gtest/googletest /home/dt/DenTerNG/workspace/projects/timp21/_Build /home/dt/DenTerNG/workspace/projects/timp21/_Build/third-party/gtest/googletest /home/dt/DenTerNG/workspace/projects/timp21/_Build/third-party/gtest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/dt/zachet/_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dt/zachet /home/dt/zachet/third-party/gtest/googletest /home/dt/zachet/_build /home/dt/zachet/_build/third-party/gtest/googletest /home/dt/zachet/_build/third-party/gtest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : third-party/gtest/googletest/CMakeFiles/gtest.dir/depend
 

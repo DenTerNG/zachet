@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/dt/DenTerNG/workspace/projects/timp21/include
+CXX_INCLUDES = -I/home/dt/zachet/include
 
 CXX_FLAGS = -std=gnu++11
 

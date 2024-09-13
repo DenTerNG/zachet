@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dt/DenTerNG/workspace/projects/timp21
+CMAKE_SOURCE_DIR = /home/dt/zachet
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dt/DenTerNG/workspace/projects/timp21/_Build
+CMAKE_BINARY_DIR = /home/dt/zachet/_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dt/DenTerNG/workspace/projects/timp21/_Build/CMakeFiles /home/dt/DenTerNG/workspace/projects/timp21/_Build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dt/zachet/_build/CMakeFiles /home/dt/zachet/_build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dt/DenTerNG/workspace/projects/timp21/_Build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dt/zachet/_build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -249,29 +249,29 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f third-party/gtest/googletest/CMakeFiles/gtest_main.dir/build.make third-party/gtest/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-sources/A.o: sources/A.cpp.o
-.PHONY : sources/A.o
+sources/function.o: sources/function.cpp.o
+.PHONY : sources/function.o
 
 # target to build an object file
-sources/A.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/print.dir/build.make CMakeFiles/print.dir/sources/A.cpp.o
-.PHONY : sources/A.cpp.o
+sources/function.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/print.dir/build.make CMakeFiles/print.dir/sources/function.cpp.o
+.PHONY : sources/function.cpp.o
 
-sources/A.i: sources/A.cpp.i
-.PHONY : sources/A.i
+sources/function.i: sources/function.cpp.i
+.PHONY : sources/function.i
 
 # target to preprocess a source file
-sources/A.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/print.dir/build.make CMakeFiles/print.dir/sources/A.cpp.i
-.PHONY : sources/A.cpp.i
+sources/function.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/print.dir/build.make CMakeFiles/print.dir/sources/function.cpp.i
+.PHONY : sources/function.cpp.i
 
-sources/A.s: sources/A.cpp.s
-.PHONY : sources/A.s
+sources/function.s: sources/function.cpp.s
+.PHONY : sources/function.s
 
 # target to generate assembly for a file
-sources/A.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/print.dir/build.make CMakeFiles/print.dir/sources/A.cpp.s
-.PHONY : sources/A.cpp.s
+sources/function.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/print.dir/build.make CMakeFiles/print.dir/sources/function.cpp.s
+.PHONY : sources/function.cpp.s
 
 tests/test.o: tests/test.cpp.o
 .PHONY : tests/test.o
@@ -316,9 +316,9 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... print"
-	@echo "... sources/A.o"
-	@echo "... sources/A.i"
-	@echo "... sources/A.s"
+	@echo "... sources/function.o"
+	@echo "... sources/function.i"
+	@echo "... sources/function.s"
 	@echo "... tests/test.o"
 	@echo "... tests/test.i"
 	@echo "... tests/test.s"

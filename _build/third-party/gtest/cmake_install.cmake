@@ -1,4 +1,4 @@
-# Install script for directory: /home/dt/DenTerNG/workspace/projects/timp21/third-party/gtest
+# Install script for directory: /home/dt/zachet/third-party/gtest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/dt/DenTerNG/workspace/projects/timp21/_Build/third-party/gtest/googlemock/cmake_install.cmake")
+  include("/home/dt/zachet/_build/third-party/gtest/googlemock/cmake_install.cmake")
 
 endif()
 

@@ -8,7 +8,7 @@ option(BUILD_TESTS "Build tests" OFF)
 
 project(print)
 
-add_library(print STATIC ${CMAKE_CURRENT_SOURCE_DIR}/sources/A.cpp)
+add_library(print STATIC ${CMAKE_CURRENT_SOURCE_DIR}/sources/function.cpp)
 
 target_include_directories(print PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
