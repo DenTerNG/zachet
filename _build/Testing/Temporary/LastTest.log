@@ -1,24 +1,28 @@
-Start testing: Sep 13 18:18 MSK
+Start testing: Sep 13 18:29 MSK
 ----------------------------------------------------------
 1/1 Testing: check
 1/1 Test: check
 Command: "/home/dt/zachet/_build/check"
 Directory: /home/dt/zachet/_build
-"check" start time: Sep 13 18:18 MSK
+"check" start time: Sep 13 18:29 MSK
 Output:
 ----------------------------------------------------------
-[==========] Running 2 tests from 1 test suite.
+[==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
-[----------] 2 tests from FunctionTest
+[----------] 1 test from FunctionTest
 [ RUN      ] FunctionTest.BasicTest
 [       OK ] FunctionTest.BasicTest (0 ms)
-[ RUN      ] FunctionTest.EdgeCases
+[----------] 1 test from FunctionTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
-Test Failed.
-"check" end time: Sep 13 18:18 MSK
+Test Passed.
+"check" end time: Sep 13 18:29 MSK
 "check" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Sep 13 18:18 MSK
+End testing: Sep 13 18:29 MSK

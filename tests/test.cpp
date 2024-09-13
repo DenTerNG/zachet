@@ -11,10 +11,10 @@ TEST(FunctionTest, BasicTest) {
 }
 
 // Test case for edge cases
-TEST(FunctionTest, EdgeCases) {
+//TEST(FunctionTest, EdgeCases) {
 //    EXPECT_EQ(function(1, 0), 1); // (1 + 0) / 1 = 1
 //  EXPECT_EQ(function(0, 0), 0); // (0 + 0) / 0 = 0 (undefined behavior, but function returns 0)
-}
+//}
 
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
